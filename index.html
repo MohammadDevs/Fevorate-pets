@@ -23,7 +23,7 @@
     <header>
         <!-- nav bar aria -->
          <nav class="bg-[#FFF9F4] py-3">
-            <div class="flex justify-around"> <!--flex-container-->
+            <div class="flex justify-between px-4 md:px-0 md:justify-around"> <!--flex-container-->
                 <!--nav 1-->
                 <div> 
                     <div class="flex items-center gap-1 md:gap-3">  
@@ -32,20 +32,20 @@
                     </div>
                 </div>
                  <!-- nav-links -->
-                 <div class="flex gap-4 items-center hidden md:block">
-                    <a href="">Find a pet</a>
-                    <a href="">Breeds</a>
-                    <a href="">Contact us</a>
+                 <div class="flex gap-4 items-center hidden md:block text-lg ">
+                    <a class="mr-2 hover:text-yellow-400 hover:font-medium hover:drop-shadow-md" href="">Find a pet</a>
+                    <a class="mr-2 hover:text-yellow-400 hover:font-medium hover:drop-shadow-md" href="">Breeds</a>
+                    <a class="hover:text-yellow-400 hover:font-medium hover:drop-shadow-md" href="">Contact us</a>
                  </div>
                  <!-- nav-buttons -->
                   <div class="flex gap-3 items-center hidden md:block">
                     <!-- bell icon -->
-                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-regular fa-bell hover:text-yellow-500 hover:drop-shadow-md text-xl"></i>
                     <!-- mag-glass iocn -->
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass hover:text-yellow-500 hover:drop-shadow-md text-xl ml-1"></i>
                     <!-- nav-btns -->
-                    <button class="border-2 border-yellow-400  py-2 px-7 rounded-lg ">Login</button>
-                    <button class="bg-yellow-400 py-2 px-7 rounded-lg border-2 border-yellow-400">Register</button>
+                    <button class="border-2 border-yellow-400 hover:border-yellow-600 py-2 px-7 rounded-lg hover:text-yellow-400">Login</button>
+                    <button class="bg-yellow-400 py-2 px-7 rounded-lg border-2 border-yellow-400 hover:text-white hover:text-xl hover:drop-shadow-md">Register</button>
                   </div>
                  <div class="flex items-center text-xl block md:hidden">
                     <i class="fa-solid fa-bars"></i>
@@ -53,10 +53,19 @@
             </div>
          </nav>
          <!-- banner section Start -->
-        <section>
-            <div>
-                <div></div>
-                <div><img src="" alt=""></div>
+        <section class="max-w-7xl mx-auto mb-14 md:mb-36">
+            <!-- banner -->
+            <h1 class=" font-semibold text-6xl text-[#111111] p-3 md:p-5">Pamper Your Pet,<br> Becaus They Deserve <br> the Bes</h1>
+            <!-- contant mother -->
+            <div class="flex px-3 md:px-5 ">
+                <!-- banner containt -->
+                <div>
+                    <p class="text-xl text-gray-400 md:h-auto md:mt-6">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                    <!-- banner btn -->
+                    <button class="bg-yellow-400 py-2 px-7 rounded-lg border-2 border-yellow-400  mt-3 md:mt-6 hover:text-white hover:text-xl hover:drop-shadow-md">Register</button>
+                </div>
+                <!-- banner img -->
+                <div class=""><img class="" src="images/cat-big.png" alt=""></div>
             </div>
         </section>
     </header>
