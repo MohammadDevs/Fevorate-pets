@@ -120,17 +120,49 @@
     <!-- product section Start -->
      <section class="md:bg-[#FFF9F4] md:pt-24">
         <div class="max-w-7xl mx-auto p-3">
-            <h1 class="text-3xl text-[#111111] font-medium">Trending Pet Products</h1>
+            <h1 class="text-3xl text-[#111111] font-medium mb-8 md:mb-12">Trending Pet Products</h1>
             <!--products mother -->
-            <div>
+            <div class="flex flex-col">
                 <!-- products 1 sid -->
-                <div>
-                
-                </div>
+            
             <!-- products 2 sid -->
-                <div>
-
+                <div class="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3">
+                    <!-- card 1 -->
+                    <div>
+                        <p><i class="fa-solid fa-star text-amber-400"></i>4.5</p>
+                        <h4>Pet Bed</h4>
+                        <span>$39.99</span>
+                    </div>
                 </div>
+            </div>
+        </div>
+     </section>
+     <!-- Price section Start -->
+     <section class="max-w-7xl mx-auto p-3 mb-14 md:mb-36">
+        <!-- price-cards mother -->
+        <div class="flex flex-col md:flex-row gap-3">
+            <!-- price card 1 -->
+            <div class="bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-2xl md:w-3/5 pb-2">
+                <div class="flex md:items-center justify-between pl-12">
+                    <div>
+                        <p class="text-xl text-[#000000] w-52 my-3 md:block hidden">Under Price</p>
+                    <h4 class=" text-xl md:text-2xl font-semibold w-52 mt-3">Pet Grooming Mitt</h4>
+                    <p class="mt-2 text-xl text-white font-medium md:block hidden">(Easy Hair Removal)</p>
+                    <h2 class="text-4xl md:text-5xl font-medium text-white md:text-black">$7.99</h2>
+                    </div>
+                    <!-- img -->
+                     <div class="mt-14 md:items-center">
+                        <img src="images/cute-dog-mid.png" alt="">
+                     </div>
+                </div>
+            </div>
+            <!-- price card 2 -->
+            <div class="bg-gradient-to-r b from-[#FFF9F4] to-[#F9DF8A] rounded-2xl md:w-2/5 pb-2 p-3">
+              <h1 class="mt-6 ml-2 text-xl w-40">T-Shirt for Dogs</h1>
+              <p class="ml-2 text-3xl font-medium text-amber-300 w-20">$7.99</p>
+              <div class="flex align-top -mt-10 justify-end">
+                <img class="w-40 md:w-80" src="images/cute-pet-small.png" alt="">
+              </div>  
             </div>
         </div>
      </section>
