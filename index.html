@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,17 +13,39 @@
     <!-- tailwind-css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisy-ui cdn -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" /> 
      <!-- when i use it then the become black -->
 
     <!-- favicon link -->
      <link rel="icon" href="images/animals.png ">
+     <!-- font-family link -->
+      <style>
+        .titel-fonts{
+            font-family: "ADLaM Display", serif;
+        }
+        .fonts-2{
+            font-family: "Sora", serif;
+        }
+      </style>
+      <!-- customise tailwind cnd -->
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <!-- Header links & cdns end -->
 </head>
-<body>
+<body class="fonts-2">
     
 
 <!-- header section Start -->
-    <header>
+    <header class="fonts-2">
         <!-- nav bar aria -->
          <nav class="bg-[#FFF9F4] py-3">
             <div class="flex justify-between px-4 md:px-0 md:justify-around"> <!--flex-container-->
@@ -58,14 +80,14 @@
          <!-- banner section Start -->
         <section class="max-w-7xl mx-auto mb-14 md:mb-36">
             <!-- banner -->
-            <h1 class=" font-semibold text-6xl text-[#111111] p-3 md:p-5">Pamper Your Pet,<br> Becaus They Deserve <br> the Bes</h1>
+            <h1 class="titel-fonts font-semibold text-6xl text-[#111111] p-3 md:p-5">Pamper Your Pet,<br> Becaus They Deserve <br> the Bes</h1>
             <!-- contant mother -->
             <div class="flex px-3 md:px-5 ">
                 <!-- banner containt -->
                 <div>
-                    <p class="text-xl text-gray-400 md:h-auto md:mt-6">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                    <p class="text-xl fonts-2 text-gray-400 md:h-auto md:mt-6">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
                     <!-- banner btn -->
-                    <button class="bg-yellow-400 py-2 px-7 rounded-lg border-2 border-yellow-400  mt-3 md:mt-6 hover:text-white hover:text-xl hover:drop-shadow-md">Register</button>
+                    <button class="bg-yellow-400 py-2 px-7 rounded-lg border-2 border-yellow-400  mt-3 md:mt-6 hover:text-white hover:text-xl hover:drop-shadow-md titel-fonts">Register</button>
                 </div>
                 <!-- banner img -->
                 <div class=""><img class="" src="images/cat-big.png" alt=""></div>
@@ -74,9 +96,9 @@
     </header>
 <!-- main section Start -->
  <main>
-    <section class="max-w-7xl mx-auto p-3">
+    <section class="max-w-7xl mx-auto p-3 titel-fonts">
         <!-- category titel -->
-        <h1 class="text-3xl font-medium mb-8 md:mb-12">Browse By Categories</h1>
+        <h1 class="titel-fonts text-3xl font-medium mb-8 md:mb-12">Browse By Categories</h1>
         <!--Mother card need for grid -->
          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 justify-around lg:gap-6 gap-y-3 md:gap-y-6 md:pb-32">
             <!-- card 1 -->
@@ -120,7 +142,7 @@
     <!-- product section Start -->
      <section class="md:bg-[#FFF9F4] md:pt-24">
         <div class="max-w-7xl mx-auto p-3">
-            <h1 class="text-3xl text-[#111111] font-medium mb-8 md:mb-12">Trending Pet Products</h1>
+            <h1 class="text-3xl text-[#111111] font-medium mb-8 md:mb-12 titel-fonts">Trending Pet Products</h1>
             <!--products mother -->
             <div class="flex flex-col">
                 <!-- products 1 sid -->
@@ -145,10 +167,10 @@
             <div class="bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-2xl md:w-3/5 pb-2">
                 <div class="flex md:items-center justify-between pl-12">
                     <div>
-                        <p class="text-xl text-[#000000] w-52 my-3 md:block hidden">Under Price</p>
+                        <p class="fonts-2 text-xl text-[#000000] w-52 my-3 md:block hidden">Under Price</p>
                     <h4 class=" text-xl md:text-2xl font-semibold w-52 mt-3">Pet Grooming Mitt</h4>
                     <p class="mt-2 text-xl text-white font-medium md:block hidden">(Easy Hair Removal)</p>
-                    <h2 class="text-4xl md:text-5xl font-medium text-white md:text-black">$7.99</h2>
+                    <h2 class="text-4xl md:text-5xl font-medium text-white md:text-black titel-fonts">$7.99</h2>
                     </div>
                     <!-- img -->
                      <div class="mt-14 md:items-center">
@@ -159,7 +181,7 @@
             <!-- price card 2 -->
             <div class="bg-gradient-to-r b from-[#FFF9F4] to-[#F9DF8A] rounded-2xl md:w-2/5 pb-2 p-3">
               <h1 class="mt-6 ml-2 text-xl w-40">T-Shirt for Dogs</h1>
-              <p class="ml-2 text-3xl font-medium text-amber-300 w-20">$7.99</p>
+              <p class="ml-2 text-3xl font-medium text-amber-300 w-20 titel-fonts">$7.99</p>
               <div class="flex align-top -mt-10 justify-end">
                 <img class="w-40 md:w-80" src="images/cute-pet-small.png" alt="">
               </div>  
@@ -167,9 +189,10 @@
         </div>
      </section>
 </main>
+
     <!-- footer section Start -->
     <footer class="bg-[#FFDC2680]">
-        <div class="max-w-7xl mx-auto p-3 mb-14 md:mb-36">
+        <div class="max-w-7xl mx-auto p-3 ">
             <!-- footer mother -->
             <div class="flex flex-col md:flex-row justify-around items-center">
                 <!-- child 1  -->
